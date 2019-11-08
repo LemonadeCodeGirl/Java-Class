@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    System.out.println("Please input how many cullums you want");
+    Scanner col = new Scanner(System.in);
+
+    int inco = col.nextInt();
+
+    Scanner other = new Scanner(System.in);
+    int oth = other.nextInt();
+
+    int [] [] coll = new int [inco] [oth];
+    
+
+    for (int i = 0; i < inco; i++){
+      for (int j = 0; j < oth; j++){
+        
+        coll[i][j] = i*j;
+        int thing = coll[i][j];  
+        String out = Integer.toString(thing);
+        if (out.length() == 1){
+          System.out.print("  |" + out + "|");
+        
+        }else if (out.length() == 2){
+          System.out.print(" |" + out + "|");
+        }else{
+          System.out.print("|" + out + "|");
+        }
+        
+      }
+      System.out.println();
+      for (int j = 0; j<(oth*4); j++){
+        System.out.print("-");
+      }
+      System.out.println();
+    }
+  }
+}
