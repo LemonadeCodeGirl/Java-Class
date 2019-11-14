@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner words = new Scanner(System.in);
+
+    System.out.println("Please enter a word");
+
+    String word = words.nextLine();
+
+    System.out.println(word);
+
+    System.out.println("Please enter your phrase");
+
+    String phrase = words.nextLine();
+    if (phrase.contains(word)){
+      System.out.println("The Word that you searched for is in here");
+    }else{
+      System.out.println("The word that you are looking for is not here");
+    }
+    
+
+    System.out.println("this is the end");
+  }
+}
