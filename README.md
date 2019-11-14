@@ -1,3 +1,4 @@
 # Java-Class
 My Java Class
-It's fun here
+It's fun here...
+                  ...Sometimes
